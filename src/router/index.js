@@ -19,7 +19,22 @@ const router = new VueRouter({
           name     : 'dashboard',
           path     : 'dashboard',
           component: () => import("../page/dashboard.vue")
-        }  
+        },
+        {
+          name     : 'avatar',
+          path     : 'avatar',
+          component: () => import("../page/avatar.vue")          
+        },
+        {
+          name     : 'link',
+          path     : 'link',
+          component: () => import("../page/link.vue")          
+        },
+        {
+          name     : 'tree',
+          path     : 'tree',
+          component: () => import("../page/tree.vue")          
+        }
       ]
     },
     
