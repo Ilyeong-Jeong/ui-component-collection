@@ -20,5 +20,6 @@ npm run dev
 
 ## Component List
 - Avatar
+- Dashboard Widget
 - Link
 - Tree
