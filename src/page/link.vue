@@ -17,7 +17,7 @@
 
   export default {
 
-    components:{
+    components: {
       "component-link": Link
     }
 

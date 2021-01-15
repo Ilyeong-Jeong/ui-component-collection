@@ -45,11 +45,11 @@
   export default {
     props: {
       title: {
-        type   : String
+        type: String
       },
 
       desc: {
-        type   : String
+        type: String
       },
     }
   }

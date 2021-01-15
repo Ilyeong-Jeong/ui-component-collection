@@ -18,6 +18,7 @@
     </component>
     
     <ul :data-parent-key="key" :class="[listClass]" v-show="!fold">
+      {{data.name}}
       <root-tree-item
         v-for="child in children"
         v-bind="child"

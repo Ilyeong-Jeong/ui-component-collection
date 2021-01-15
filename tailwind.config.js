@@ -153,6 +153,7 @@ module.exports = {
       extrabold: '800',
       black: '900',
     },
+
     lineHeight: {
       none: '1',
       tight: '1.25',
@@ -161,6 +162,7 @@ module.exports = {
       relaxed: '1.625',
       loose: '2',
     },
+
     letterSpacing: {
       tighter: '-0.05em',
       tight: '-0.025em',
@@ -169,8 +171,10 @@ module.exports = {
       wider: '0.05em',
       widest: '0.1em',
     },
+
     textColor: theme => theme('colors'),
     backgroundColor: theme => theme('colors'),
+
     backgroundPosition: {
       bottom: 'bottom',
       center: 'center',
@@ -182,31 +186,36 @@ module.exports = {
       'right-top': 'right top',
       top: 'top',
     },
+
     backgroundSize: {
       auto: 'auto',
       cover: 'cover',
       contain: 'contain',
     },
+
     borderWidth: {
-      default: '1px',
+      DEFAULT: '1px',
       '0': '0',
       '2': '2px',
       '4': '4px',
       '8': '8px'
     },
+
     borderColor: theme => ({
       ...theme('colors'),
       dim    : "#E7E7E7",
-      default: "#BDBDBD",
+      DEFAULT: "#BDBDBD",
     }),
+
     borderRadius: {
       'none': '0',
       'sm': '2px',
-      default: '4px',
+      DEFAULT: '4px',
       'lg': '8px',
       'xl': '12px',
       'full': '9999px',
     },
+
     cursor: {
       auto: 'auto',
       default: 'default',
@@ -216,6 +225,7 @@ module.exports = {
       move: 'move',
       'not-allowed': 'not-allowed',
     },
+
     width: theme => ({
       auto: 'auto',
       ...theme('spacing'),
@@ -248,21 +258,25 @@ module.exports = {
       full: '100%',
       screen: '100vw',
     }),
+
     height: theme => ({
       auto: 'auto',
       ...theme('spacing'),
       full: '100%',
       screen: '100vh',
     }),
+
     minWidth: {
       '0': '0',
       full: '100%',
     },
+
     minHeight: {
       '0': '0',
       full: '100%',
       screen: '100vh',
     },
+
     maxWidth: {
       'xs': '320px',
       'sm': '480px',
@@ -275,16 +289,19 @@ module.exports = {
       '5xl': '1600px',
       'full': '100%',
     },
+
     maxHeight: {
       full: '100%',
       screen: '100vh',
     },
+
     padding: theme => theme('spacing'),
     margin: (theme, { negative }) => ({
       auto: 'auto',
       ...theme('spacing'),
       ...negative(theme('spacing')),
     }),
+
     objectPosition: {
       bottom: 'bottom',
       center: 'center',
@@ -296,15 +313,17 @@ module.exports = {
       'right-top': 'right top',
       top: 'top',
     },
+
     boxShadow: {
       'sm'   : '0 1px 2px 0 rgba(0,0,0,0.15)',
-      default: '0px 5px 10px 0 rgba(138, 149, 158, 0.15)',
+      DEFAULT: '0px 5px 10px 0 rgba(138, 149, 158, 0.15)',
       'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
       'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
       'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
       'outline': '0 0 0 3px rgba(52,144,220,0.5)',
       'none': 'none',
     },
+
     zIndex: {
       'auto': 'auto',
       '0': 0,
@@ -315,6 +334,7 @@ module.exports = {
       '50': 50,
       '100': 100
     },
+
     opacity: {
       '0': '0',
       '25': '0.25',
@@ -322,26 +342,32 @@ module.exports = {
       '75': '0.75',
       '100': '1',
     },
+
     fill: {
       current: 'currentColor',
     },
+
     stroke: {
       current: 'currentColor',
     },
+
     flex: {
       '1': '1 1 0%',
       auto: '1 1 auto',
       initial: '0 1 auto',
       none: 'none',
     },
+
     flexGrow: {
       '0': '0',
-      default: '1',
+      DEFAULT: '1',
     },
+
     flexShrink: {
       '0': '0',
-      default: '1',
+      DEFAULT: '1',
     },
+
     order: {
       first: '-9999',
       last: '9999',
@@ -359,17 +385,21 @@ module.exports = {
       '11': '11',
       '12': '12',
     },
+
     listStyleType: {
       none: 'none',
       disc: 'disc',
       decimal: 'decimal',
     },
+
     inset: {
       '0': '0',
       auto: 'auto',
     },
+
     container: {}
   },
+  
   variants: {
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],

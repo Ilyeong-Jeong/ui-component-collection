@@ -13,17 +13,22 @@ const router = new VueRouter({
       name     : 'root', 
       path     : '/', 
       component: App, 
-      redirect : 'dashboard',
+      redirect : 'index',
       children : [
         {
-          name     : 'dashboard',
-          path     : 'dashboard',
-          component: () => import("../page/dashboard.vue")
+          name     : 'index',
+          path     : 'index',
+          component: () => import("../page/index.vue")
         },
         {
           name     : 'avatar',
           path     : 'avatar',
           component: () => import("../page/avatar.vue")          
+        },
+        {
+          name     : 'dashboardWidget',
+          path     : 'dashboardwidget',
+          component: () => import("../page/dashboard-widget.vue")          
         },
         {
           name     : 'link',
