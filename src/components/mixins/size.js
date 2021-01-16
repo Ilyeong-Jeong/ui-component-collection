@@ -1,3 +1,7 @@
+/**
+ * 컴포넌트 크기 mixin
+ */
+
 export default {
   
   props: {

@@ -36,6 +36,11 @@ const router = new VueRouter({
           component: () => import("../page/link.vue")          
         },
         {
+          name     : 'prettyScroll',
+          path     : 'prettyScroll',
+          component: () => import("../page/pretty-scroll.vue")          
+        },
+        {
           name     : 'tree',
           path     : 'tree',
           component: () => import("../page/tree.vue")          

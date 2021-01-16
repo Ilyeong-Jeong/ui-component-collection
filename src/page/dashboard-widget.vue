@@ -3,11 +3,9 @@
     title="Dashboard Widget"
     desc="Resizable & Reordering Dashboard Widget Component Example"
   >
-    <div class="w-full h-full">
-      <component-widget-frame
-        :widgets="widgets"
-      ></component-widget-frame>
-    </div>
+    <component-widget-frame
+      :widgets="widgets"
+    ></component-widget-frame>
   </common-panel>
 </template>
 

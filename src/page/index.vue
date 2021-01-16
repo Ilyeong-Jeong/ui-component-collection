@@ -10,6 +10,9 @@
 
 <template>
   <div class="dashboard">
-    UI Component Collection Playground Default Page
+    UI Component Collection Playground Index Page.
+    <br>
+    <br>
+    Select the components you want to see from the left menu.
   </div>
 </template>

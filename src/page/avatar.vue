@@ -3,10 +3,12 @@
     title="Avatar"
     desc="Avatar Component Example"
   >
-    <component-avatar username="Fran"></component-avatar>
-    <component-avatar username="Fran" error></component-avatar>
-    <component-avatar username="Fran" :size="48"></component-avatar>
-    <component-avatar username="Fran" error src="https://picsum.photos/200" :size="48"></component-avatar>
+    <template slot="panel-list">
+      <component-avatar username="Fran"></component-avatar>
+      <component-avatar username="Fran" error></component-avatar>
+      <component-avatar username="Fran" :size="48"></component-avatar>
+      <component-avatar username="Fran" error src="https://picsum.photos/200" :size="48"></component-avatar>
+    </template>
   </common-panel>
 </template>
 

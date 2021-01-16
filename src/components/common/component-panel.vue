@@ -11,7 +11,7 @@
       @apply text-large mb-2;
     }
 
-    .panel-body {
+    .panel-list {
       @apply flex flex-row items-center;
 
       & > * {
@@ -33,9 +33,11 @@
       {{ desc }}
     </div>
 
-    <div class="panel-body">
-      <slot></slot>
-    </div>  
+    <div class="panel-list">
+      <slot name="panel-list"></slot>
+    </div>
+
+    <slot></slot>  
   </div>
 
 </template>

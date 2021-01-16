@@ -1,3 +1,7 @@
+/**
+ * 컴포넌트 상태 mixin
+ */
+
 export default {
   
   props: {
@@ -37,7 +41,6 @@ export default {
         loading : 'is-loading',
         active  : 'is-active',
         normal  : 'is-normal',
-        success : 'is-success',
         action  : 'is-action'
       });
     }

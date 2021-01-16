@@ -1,3 +1,7 @@
+/**
+ * 컴포넌트 props 매칭 mixin
+ */
+
 export default {
 
   methods: {

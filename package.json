@@ -27,6 +27,7 @@
     "html-webpack-plugin": "^4.5.1",
     "muuri": "^0.8.0",
     "node-sass": "^5.0.0",
+    "perfect-scrollbar": "^0.7.1",
     "postcss": "^8.2.4",
     "postcss-loader": "^4.1.0",
     "sass-loader": "^10.1.1",

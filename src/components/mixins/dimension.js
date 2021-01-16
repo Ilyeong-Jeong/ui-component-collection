@@ -1,3 +1,7 @@
+/**
+ * 컴포넌트 width, height size mixin
+ */
+
 function toCssString (target) {
   if(typeof target === "number") {
     return target + "px";
