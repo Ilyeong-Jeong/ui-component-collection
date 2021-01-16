@@ -22,4 +22,5 @@ npm run dev
 - Avatar
 - Dashboard Widget
 - Link
+- Pretty Scroll
 - Tree (incomplete)
