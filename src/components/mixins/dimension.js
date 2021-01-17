@@ -1,5 +1,5 @@
 /**
- * 컴포넌트 width, height size mixin
+ * 컴포넌트 width, height dimension mixin
  */
 
 function toCssString (target) {

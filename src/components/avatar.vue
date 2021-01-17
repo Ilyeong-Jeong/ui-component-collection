@@ -34,8 +34,8 @@
 <script>
 
   /**
-    아바타 이미지 컴포넌트
-  */
+   * 아바타 이미지 컴포넌트
+   */
 
   import Avatar from "vue-avatar";
 

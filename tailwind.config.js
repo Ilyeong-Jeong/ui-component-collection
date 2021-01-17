@@ -40,9 +40,9 @@ module.exports = {
 
       green: {
         primary: '#2C8E6E',
-        dim : '#53C87E',
-        dim2: '#A2EABC',
-        tint : '#186049',
+        dim    : '#53C87E',
+        dim2   : '#A2EABC',
+        tint   : '#186049',
       },
 
       purple: {
@@ -54,9 +54,9 @@ module.exports = {
       
       cyan: {
         primary: '#00C8FF',
-        dim : '#66DEFF',
-        dim2: '#CCF4FF',
-        tint : '#0E84A6',
+        dim    : '#66DEFF',
+        dim2   : '#CCF4FF',
+        tint   : '#0E84A6',
       }
     },
 

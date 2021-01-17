@@ -26,9 +26,19 @@ const router = new VueRouter({
           component: () => import("../page/avatar.vue")          
         },
         {
+          name     : 'checkbox',
+          path     : 'checkbox',
+          component: () => import("../page/checkbox.vue")          
+        },
+        {
           name     : 'dashboardWidget',
           path     : 'dashboardwidget',
           component: () => import("../page/dashboard-widget.vue")          
+        },
+        {
+          name     : 'icon',
+          path     : 'icon',
+          component: () => import("../page/icon.vue")          
         },
         {
           name     : 'link',

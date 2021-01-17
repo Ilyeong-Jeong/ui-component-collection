@@ -43,8 +43,8 @@
 <script>
 
   /**
-    일반 스크롤이 아니라 장식성의 가는 스크롤 컴포넌트
-  */
+   * 일반 스크롤이 아니라 장식성의 가는 스크롤 컴포넌트
+   */
 
   import PerfectScrollbar from "perfect-scrollbar";
   

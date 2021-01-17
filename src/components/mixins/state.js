@@ -8,40 +8,37 @@ export default {
     disabled: {
       type: Boolean
     },
-    error: {
-      type: Boolean
-    },
-    action: {
-      type: Boolean,
-    },
-    warn: {
-      type: Boolean
-    },
     loading: {
       type: Boolean
     },
-    active: {
+    error: {
+      type: Boolean
+    },
+    warning: {
       type: Boolean
     },
     success: {
+      type: Boolean
+    },
+    active: {
       type: Boolean
     }
   },
   
   computed: {
     normal () {
-      return !this.disabled && !this.loading && !this.active && !this.action;
+      return !this.disabled && !this.loading && !this.active;
     },
 
     stateCls () {
       return this.booleanPropMatcher({
         disabled: 'is-disabled',
-        error   : 'is-error',
-        warn    : 'is-warning',
         loading : 'is-loading',
+        error   : 'is-error',
+        warning : 'is-warning',
+        success : 'is-success',
         active  : 'is-active',
         normal  : 'is-normal',
-        action  : 'is-action'
       });
     }
   }

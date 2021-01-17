@@ -51,8 +51,8 @@
 <script>
 
   /**
-    링크 컴포넌트
-  */
+   * 링크 컴포넌트
+   */
 
   import Component from "./mixins/component";
   import State     from "./mixins/state";
