@@ -1,29 +1,28 @@
 <style lang="scss">
 
-  .component-checkbox {
+  .component-radio {
     @apply inline-flex relative items-center;
 
-    .checkbox-wrapper {
-      @apply border border-solid bg-white border-grey-primary rounded-sm;
+    .radio-wrapper {
+      @apply border border-solid border-grey-primary rounded-full;
 
-      .checkbox-container {
+      .radio-container {
         @apply w-4 h-4 m-auto;
 
-        transform-origin: 0% 0% 0;
-        margin-left     : 30%;
+        transform-origin: 0px 0px 0;
+        margin-left     : 22%;
+        margin-top      : 22%;
 
-        .check {
-          @apply w-px h-2 p-half;
-          @apply border-r-2 border-b-2 border-solid border-white box-border;
-          @apply transform rotate-45;
-
-          height: 10px;
+        .ball {
+          @apply w-2 h-2 bg-white rounded-full opacity-100;
         }
 
-        input[type=checkbox] {
-          @apply absolute w-4 h-4 opacity-0 top-0 cursor-pointer;
+        input[type=radio] {
+          @apply absolute top-0 left-0;
+          @apply w-4 h-4 opacity-0 cursor-pointer;
 
-          left: -30%;
+          margin-left: -22%;
+          margin-top : -22%;
         }
       }
     }
@@ -33,63 +32,63 @@
     }
 
     &.is-checked {
-      .checkbox-wrapper {
+      .radio-wrapper {
         @apply border-blue-primary bg-blue-primary;
       }
 
       &.is-error {
-        .checkbox-wrapper {
+        .radio-wrapper {
           @apply bg-red-primary border-red-primary;
         }  
       }
 
       &.is-warning {
-        .checkbox-wrapper {
+        .radio-wrapper {
           @apply bg-yellow-primary border-yellow-primary;
         }         
       }
 
       &.is-success {
-        .checkbox-wrapper {
+        .radio-wrapper {
           @apply bg-green-primary border-green-primary;
         }         
       }
 
       &:active {
-        .checkbox-wrapper {
+        .radio-wrapper {
           @apply border-blue-tint bg-white;
 
-          .check {
-            @apply border-blue-tint;
+          .ball {
+            @apply bg-blue-tint;
           }
         }
 
         &.is-error {
-          .checkbox-wrapper {
+          .radio-wrapper {
             @apply border-red-tint bg-white;
 
-            .check {
-              @apply border-red-tint;
+            .ball {
+              @apply bg-red-tint;
             }
           }
         } 
 
         &.is-warning {
-          .checkbox-wrapper {
+          .radio-wrapper {
             @apply border-yellow-tint bg-white;
 
-            .check {
-              @apply border-yellow-tint;
+            .ball {
+              @apply bg-yellow-tint;
             }
           }      
         }
 
         &.is-success {
-          .checkbox-wrapper {
+          .radio-wrapper {
             @apply border-green-tint bg-white;
 
-            .check {
-              @apply border-green-tint;
+            .ball {
+              @apply bg-green-tint;
             }
           }        
         }       
@@ -98,24 +97,24 @@
 
     &:not(.is-checked) {
       &:active {
-        .checkbox-wrapper {
+        .radio-wrapper {
           @apply border-blue-tint;
         }
 
         &.is-error {
-          .checkbox-wrapper {
+          .radio-wrapper {
             @apply border-red-tint;
           }          
         }
 
         &.is-warning {
-          .checkbox-wrapper {
+          .radio-wrapper {
             @apply border-yellow-tint;
           }         
         }
 
         &.is-success {
-          .checkbox-wrapper {
+          .radio-wrapper {
             @apply border-green-tint;
           }         
         }       
@@ -126,12 +125,13 @@
 </style>
 
 <template>
-  <div :class="['component-checkbox', {'is-checked': checked }, stateCls]" :style="style.wrapper">
-    <div class="checkbox-wrapper" :style="style.innerWrapper">
-      <div class="checkbox-container" :style="style.container">
-        <div class="check"></div>
-        <input 
-          type="checkbox"
+  <div :class="['component-radio', {'is-checked': isChecked }, stateCls]" :style="style.wrapper">
+    <div class="radio-wrapper" :style="style.innerWrapper">
+      <div class="radio-container" :style="style.container">
+        <div class="ball"></div>
+        <input type="radio"
+          :name="name"
+          :value="value"
           v-model="check"
         >
       </div>
@@ -142,7 +142,7 @@
 <script>
 
   /**
-   * 체크박스 컴포넌트
+   * 라디오 컴포넌트
    */
 
   import Component from "./mixins/component";
@@ -154,7 +154,15 @@
 
     props: {
       checked: {
-        type: Boolean
+
+      },
+
+      name: {
+        type: String,
+      },
+
+      value: {
+        type: String,
       },
 
       size: {
@@ -164,6 +172,10 @@
     },
 
     computed: {
+      isChecked () {
+        return this.checked == this.value;
+      },
+
       style () {
         return {
           wrapper    : {
@@ -184,10 +196,10 @@
         get () {
           return this.checked;
         },
-        
-        set (checked) {
+
+        set (value) {
           if(!this.disabled) {
-            this.$emit("change", checked);
+            this.$emit("change", value);
           }
         }
       }

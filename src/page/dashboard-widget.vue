@@ -1,7 +1,7 @@
 <template>
   <common-panel
     title="Dashboard Widget"
-    desc="Resizable & Reordering Dashboard Widget Component Example"
+    desc="Resizable & Reordering Dashboard Widget Component Example, Adjust the order and size."
   >
     <component-widget-frame
       :widgets="widgets"

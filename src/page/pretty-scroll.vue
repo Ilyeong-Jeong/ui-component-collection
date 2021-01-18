@@ -7,10 +7,10 @@
       height="500px"
     >
       <div
-        class="w-full bg-blue-primary"
+        class="w-full bg-green-primary"
         style="height: 1000px;"
       >
-        Scroll down on the blue area. 
+        Scroll down. 
       </div>
     </component-scroll>
   </common-panel>

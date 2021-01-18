@@ -5,6 +5,11 @@ export default [
     link: "avatar" 
   },
   {
+    key : "button",
+    name: "Button",
+    link: "button" 
+  },
+  {
     key : "checkbox",
     name: "Checkbox",
     link: "checkbox" 
@@ -28,6 +33,11 @@ export default [
     key : "pretty-scroll",
     name: "Pretty Scroll",
     link: "prettyScroll" 
+  },
+  {
+    key : "radio",
+    name: "Radio",
+    link: "radio" 
   },
   {
     key : "tree",

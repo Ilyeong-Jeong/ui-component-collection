@@ -26,6 +26,11 @@ const router = new VueRouter({
           component: () => import("../page/avatar.vue")          
         },
         {
+          name     : 'button',
+          path     : 'button',
+          component: () => import("../page/button.vue")          
+        },
+        {
           name     : 'checkbox',
           path     : 'checkbox',
           component: () => import("../page/checkbox.vue")          
@@ -49,6 +54,11 @@ const router = new VueRouter({
           name     : 'prettyScroll',
           path     : 'prettyScroll',
           component: () => import("../page/pretty-scroll.vue")          
+        },
+        {
+          name     : 'radio',
+          path     : 'radio',
+          component: () => import("../page/radio.vue")          
         },
         {
           name     : 'tree',

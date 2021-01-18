@@ -20,9 +20,11 @@ npm run dev
 
 ## Component List
 - Avatar
+- Buttons
 - Checkbox
 - Dashboard Widget
 - Icon
 - Link
 - Pretty Scroll
+- Radio
 - Tree (incomplete)
