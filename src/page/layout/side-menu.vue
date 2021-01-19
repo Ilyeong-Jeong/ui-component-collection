@@ -29,7 +29,7 @@
 <template>
   <div class="layout-side-menu">
     <div class="component-search-input">
-      <input class="w-full" placeholder="search" v-model="searchName">
+      <component-input placeholder="search" width="100%" v-model="searchName"></component-input>
     </div>
 
     <component-scroll>
@@ -53,6 +53,7 @@
 <script>
 
   import PrettyScroll from "../../components/pretty-scroll.vue";
+  import TextInput    from "../../components/inputs/text-input.vue"
 
   import MenuData from "./menu-data";
 
@@ -83,7 +84,8 @@
     },
 
     components: {
-      "component-scroll": PrettyScroll
+      "component-scroll": PrettyScroll,
+      "component-input" : TextInput
     }
 
   }

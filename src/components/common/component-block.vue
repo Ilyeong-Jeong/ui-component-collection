@@ -8,10 +8,10 @@
     }
 
     .block-list {
-      @apply flex flex-row items-center;
+      @apply flex flex-row items-center flex-wrap;
 
       & > * {
-        @apply mr-2;
+        @apply mr-2 mb-2;
       } 
     }
   }

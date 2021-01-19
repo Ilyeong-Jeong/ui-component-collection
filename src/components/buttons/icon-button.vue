@@ -89,6 +89,10 @@
 
 <script>
 
+  /**
+   * 아이콘 버튼 컴포넌트
+   */
+
   import Component  from "../mixins/component";
 
   import ButtonBase from "./button-base.vue";

@@ -93,6 +93,10 @@
 
 <script>
 
+  /**
+   * 스타일 아웃라인 버튼 컴포넌트
+   */
+
   import Component  from "../mixins/component";
   import Dimension  from "../mixins/dimension";
 

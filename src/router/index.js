@@ -46,6 +46,11 @@ const router = new VueRouter({
           component: () => import("../page/icon.vue")          
         },
         {
+          name     : 'input',
+          path     : 'input',
+          component: () => import("../page/input.vue")          
+        },
+        {
           name     : 'link',
           path     : 'link',
           component: () => import("../page/link.vue")          

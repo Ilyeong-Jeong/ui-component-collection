@@ -23,7 +23,12 @@ export default [
     key : "icon",
     name: "Icon",
     link: "icon" 
-  },            
+  },       
+  {
+    key : "input",
+    name: "Input",
+    link: "input" 
+  },         
   {
     key : "link",
     name: "Link",
