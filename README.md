@@ -24,6 +24,7 @@ npm run dev
 - Checkbox
 - Dashboard Widget
 - Icon
+- Inputs 
 - Link
 - Pretty Scroll
 - Radio
