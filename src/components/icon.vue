@@ -38,7 +38,7 @@
     props: {
       /** Font Awesome Icon Class */
       icon: {
-        type: String
+
       },
 
       autoWidth: {

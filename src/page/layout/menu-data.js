@@ -46,7 +46,7 @@ export default [
   },
   {
     key : "tree",
-    name: "Tree (incomplete)",
+    name: "Tree",
     link: "tree" 
   },
 ]

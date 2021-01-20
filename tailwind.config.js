@@ -11,10 +11,10 @@ module.exports = {
       white: '#ffffff',
 
       grey: {
-        primary : '#777B94',
-        dim     : '#C9C9C9',
-        dim2    : '#F5F5F5',
-        tint    : '#231F20',
+        primary: '#777B94',
+        dim    : '#C9C9C9',
+        dim2   : '#F5F5F5',
+        tint   : '#231F20',
       },
 
       blue: {
