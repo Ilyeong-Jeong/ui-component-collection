@@ -3,7 +3,7 @@
     title="Pretty Scroll"
     desc="Ornamental fine scroll Component Example"
   >
-    <component-scroll
+    <component-pretty-scroll
       height="500px"
     >
       <div
@@ -12,7 +12,7 @@
       >
         Scroll down. 
       </div>
-    </component-scroll>
+    </component-pretty-scroll>
   </common-panel>
 </template>
 
@@ -23,7 +23,7 @@
   export default {
 
     components: {
-      "component-scroll": PrettyScroll
+      "component-pretty-scroll": PrettyScroll
     }
 
   }

@@ -33,7 +33,7 @@
     }
 
     &.is-success {
-      @apply border-cyan-primary;
+      @apply border-green-primary;
     }
 
     &.is-disabled {
@@ -59,8 +59,7 @@
     :tagName="textInputBase"
     type="text"
     @input="onInput"
-  >
-  </input-base>
+  ></input-base>
 </template>
 
 <script>

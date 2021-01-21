@@ -59,18 +59,17 @@
       }
     }
 
-    &.is-success {
-      .addon-icon {
-        @apply text-cyan-primary;
-      }
-    }
-
     &.is-warning {
       .addon-icon {
         @apply text-yellow-primary;
       }
     }
 
+    &.is-success {
+      .addon-icon {
+        @apply text-green-primary;
+      }
+    }
   }
 
 </style>

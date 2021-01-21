@@ -258,6 +258,119 @@
       </template>
     </common-block>
 
+    <!-- Dropdown Button -->
+    <common-block
+      name="Dropdown Button"
+    >
+      <template slot="block-list">
+        <component-dropdown-button>
+          button
+          <div 
+            class="bg-grey-dim2"
+            slot="contents"
+          >
+            dropdown contents
+          </div>
+        </component-dropdown-button> 
+
+        <component-dropdown-button
+          disabled
+        >
+          button
+          <div 
+            class="bg-grey-dim2"
+            slot="contents"
+          >
+            dropdown contents
+          </div>
+        </component-dropdown-button> 
+
+        <component-dropdown-button
+          error
+        >
+          button
+          <div 
+            class="bg-grey-dim2"
+            slot="contents"
+          >
+            dropdown contents
+          </div>
+        </component-dropdown-button> 
+
+        <component-dropdown-button
+          warning
+        >
+          button
+          <div 
+            class="bg-grey-dim2"
+            slot="contents"
+          >
+            dropdown contents
+          </div>
+        </component-dropdown-button>
+
+        <component-dropdown-button
+          success
+        >
+          button
+          <div 
+            class="bg-grey-dim2"
+            slot="contents"
+          >
+            dropdown contents
+          </div>
+        </component-dropdown-button>
+
+        <component-dropdown-button
+          small
+        >
+          button
+          <div 
+            class="bg-grey-dim2"
+            slot="contents"
+          >
+            dropdown contents
+          </div>
+        </component-dropdown-button>
+
+        <component-dropdown-button
+          large
+        >
+          button
+          <div 
+            class="bg-grey-dim2"
+            slot="contents"
+          >
+            dropdown contents
+          </div>
+        </component-dropdown-button>
+
+        <component-dropdown-button
+          loading
+        >
+          button
+          <div 
+            class="bg-grey-dim2"
+            slot="contents"
+          >
+            dropdown contents
+          </div>
+        </component-dropdown-button> 
+
+        <component-dropdown-button
+          iconCls="fas fa-check-circle"
+        >
+          button
+          <div 
+            class="bg-grey-dim2"
+            slot="contents"
+          >
+            dropdown contents
+          </div>
+        </component-dropdown-button>  
+      </template>
+    </common-block>
+
     <!-- Icon Button -->
     <common-block
       name="Icon Button"
@@ -298,18 +411,22 @@
 
 <script>
 
-  import Button        from "../components/buttons/button.vue";
-  import OutlineButton from "../components/buttons/outline-button.vue";
-  import IconButton    from "../components/buttons/icon-button.vue";
-  import Icon          from "../components/icon.vue";
+  import Button         from "../components/buttons/button.vue";
+  import OutlineButton  from "../components/buttons/outline-button.vue";
+  import DropdownButton from "../components/buttons/dropdown-button.vue";
+  import IconButton     from "../components/buttons/icon-button.vue";
+
+  import Icon           from "../components/icon.vue";
 
   export default {
 
     components: {
-      "component-button"        : Button,
-      "component-outline-button": OutlineButton,
-      "component-icon-button"   : IconButton,
-      "component-icon"          : Icon
+      "component-button"         : Button,
+      "component-outline-button" : OutlineButton,
+      "component-dropdown-button": DropdownButton,
+      "component-icon-button"    : IconButton,
+
+      "component-icon"           : Icon
     }
 
   }

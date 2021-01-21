@@ -32,7 +32,7 @@
       <component-input placeholder="search" width="100%" v-model="searchName"></component-input>
     </div>
 
-    <component-scroll>
+    <component-pretty-scroll>
       <div 
         v-for="m in vMenu" 
         :key="m.key"
@@ -46,7 +46,7 @@
           </span>
         </div>
       </div>
-    </component-scroll>
+    </component-pretty-scroll>
   </div>
 </template>
 
@@ -84,7 +84,7 @@
     },
 
     components: {
-      "component-scroll": PrettyScroll,
+      "component-pretty-scroll": PrettyScroll,
       "component-input" : TextInput
     }
 

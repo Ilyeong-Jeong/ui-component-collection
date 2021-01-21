@@ -111,6 +111,10 @@
 
 <script>
 
+  /**
+   * 대시보드 전체 위젯 프레임 컴포넌트
+   */
+
   import WidgetLayout from "muuri";
   
   import DragResize from "./drag-resize.vue";

@@ -13,7 +13,7 @@
     margin-bottom: $offset;
   }
 
-  .ps--theme_dwsu {
+  .ps--theme_component {
     @include ps-container(map-merge($ps-theme-default, (
       scrollbar-x-rail-height: $railWidth,
       scrollbar-x-height: $railWidth,

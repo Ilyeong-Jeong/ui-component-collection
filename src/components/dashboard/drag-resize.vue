@@ -102,6 +102,10 @@
 
 <script>
 
+  /**
+   * 대시보드 위젯 프레임에서 resize를 하기 위한 컴포넌트
+   */
+
   import VueDragResize from 'vue-draggable-resizable';
 
   export default {

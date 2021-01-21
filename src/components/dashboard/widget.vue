@@ -34,6 +34,10 @@
 
 <script>
 
+  /**
+   * 대시보드 위젯 컴포넌트
+   */
+
   import ContentPanelHeader from "../content-panel/panel-header.vue";
   import ContentPanel       from "../content-panel/index.vue";
 
