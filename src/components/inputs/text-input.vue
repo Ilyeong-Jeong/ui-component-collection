@@ -5,7 +5,7 @@
     @apply border bg-white border-grey-primary rounded;
 
     &:hover {
-      @apply border-blue-primary;
+      @apply border-blue-dim;
     }
 
     &:focus {

@@ -28,4 +28,5 @@ npm run dev
 - Link
 - Pretty Scroll
 - Radio
+- Switch
 - Tree

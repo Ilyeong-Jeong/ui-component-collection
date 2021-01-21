@@ -11,8 +11,7 @@
     }
 
     .content-panel-body {
-      @apply p-4 overflow-auto;
-      @apply flex-1;
+      @apply p-4 flex-1 overflow-auto;
     }
 
     &.has-tab {

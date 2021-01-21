@@ -15,6 +15,10 @@
       }
       
       &:hover {
+        @apply bg-blue-dim text-white;
+      }
+
+      &:active {
         @apply bg-blue-tint text-white;
       }
 

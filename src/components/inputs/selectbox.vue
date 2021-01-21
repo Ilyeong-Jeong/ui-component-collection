@@ -23,10 +23,10 @@
         @apply cursor-pointer;
 
         &:hover {
-          @apply border-blue-primary;
+          @apply border-blue-dim;
 
           .component-icon {
-            @apply text-blue-primary;
+            @apply text-blue-dim;
           }
         }
 

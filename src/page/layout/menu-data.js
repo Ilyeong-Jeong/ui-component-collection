@@ -45,6 +45,11 @@ export default [
     link: "radio" 
   },
   {
+    key : "switch",
+    name: "Switch",
+    link: "switch" 
+  },
+  {
     key : "tree",
     name: "Tree",
     link: "tree" 

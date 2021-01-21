@@ -66,6 +66,11 @@ const router = new VueRouter({
           component: () => import("../page/radio.vue")          
         },
         {
+          name     : 'switch',
+          path     : 'switch',
+          component: () => import("../page/switch.vue")          
+        },
+        {
           name     : 'tree',
           path     : 'tree',
           component: () => import("../page/tree.vue")          

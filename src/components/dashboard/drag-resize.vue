@@ -3,8 +3,7 @@
   .component-drag-resize {
     
     &.vdr {
-      position: absolute;
-      box-sizing: border-box;
+      @apply absolute box-border;
     }
     
     .component-dragble-handle {
@@ -12,58 +11,61 @@
     }
 
     .component-dragble-handle-tl {
-      top: -5px;
-      left: -5px;
-      cursor: nw-resize;
       @apply border-t-4 border-l-4 border-grey-primary;
+
+      top   : -5px;
+      left  : -5px;
+      cursor: nw-resize;
     }
 
     .component-dragble-handle-tm {
-      top: -5px;
-      left: 50%;
+      top        : -5px;
+      left       : 50%;
       margin-left: -5px;
-      cursor: n-resize;
+      cursor     : n-resize;
     }
 
     .component-dragble-handle-tr {
-      top: -5px;
-      right: -5px;
+      top   : -5px;
+      right : -5px;
       cursor: ne-resize;
     }
 
     .component-dragble-handle-ml {
-      top: 50%;
+      top       : 50%;
+      left      : -5px;
       margin-top: -5px;
-      left: -5px;
-      cursor: w-resize;
+      cursor    : w-resize;
     }
 
     .component-dragble-handle-mr {
-      top: 50%;
+      top       : 50%;
+      right     : -5px;
       margin-top: -5px;
-      right: -5px;
-      cursor: e-resize;
+      cursor    : e-resize;
     }
 
     .component-dragble-handle-bl {
-      bottom: -5px;
-      left: -5px;
-      cursor: sw-resize;
       @apply border-l-4 border-b-4 border-grey-primary;
+
+      bottom: -5px;
+      left  : -5px;
+      cursor: sw-resize;
     }
 
     .component-dragble-handle-bm {
-      bottom: -5px;
-      left: 50%;
+      bottom     : -5px;
+      left       : 50%;
       margin-left: -5px;
-      cursor: s-resize;
+      cursor     : s-resize;
     }
 
     .component-dragble-handle-br {
-      bottom: -5px;
-      right: -5px;
-      cursor: se-resize;
       @apply border-r-4 border-b-4 border-grey-primary;
+
+      bottom: -5px;
+      right : -5px;
+      cursor: se-resize;
     }
   }
 

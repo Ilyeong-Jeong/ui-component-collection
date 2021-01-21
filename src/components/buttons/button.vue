@@ -79,6 +79,22 @@
       }
     }
 
+    &:hover {
+      @apply bg-blue-dim shadow-md;
+
+      &.is-error {
+        @apply bg-red-dim;
+      }
+
+      &.is-warning {
+        @apply bg-yellow-dim;
+      }
+
+      &.is-success {
+        @apply bg-green-dim;
+      }
+    }
+
     &:active {
       @apply bg-blue-tint shadow-md;
 
