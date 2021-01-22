@@ -50,6 +50,11 @@ export default [
     link: "switch" 
   },
   {
+    key : "toaster",
+    name: "Toaster",
+    link: "toaster" 
+  },
+  {
     key : "tree",
     name: "Tree",
     link: "tree" 

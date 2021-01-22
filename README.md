@@ -29,4 +29,5 @@ npm run dev
 - Pretty Scroll
 - Radio
 - Switch
+- Toaster
 - Tree

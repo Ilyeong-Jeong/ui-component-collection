@@ -32,8 +32,7 @@
     }
 
     &.is-large {
-      @apply h-10 font-bold text-large;
-      border-radius: 6px;
+      @apply h-10 font-bold text-large rounded-md;
 
       .component-icon {
         @apply w-8 h-8 text-header;

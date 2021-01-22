@@ -213,6 +213,7 @@ module.exports = {
       'none': '0',
       'sm': '2px',
       DEFAULT: '4px',
+      'md': '6px',
       'lg': '8px',
       'xl': '12px',
       'full': '9999px',

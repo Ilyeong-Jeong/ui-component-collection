@@ -1,23 +1,19 @@
 <style lang="scss">
   
   .component-dropdown {
-
-    position: relative;
-    display : inline-block;
+    @apply relative inline-block;
 
     * {
-      box-sizing: border-box;
+      @apply box-border;
     }
 
     .dropdown-trigger {
-      display: block;
+      @apply block;
     }
   }
 
   .component-dropdown-contents {
-    position: fixed;
-    z-index : 50;
-    width   : auto;
+    @apply fixed z-50 w-auto;
   }
 
 </style>
@@ -42,6 +38,10 @@
 </template>
 
 <script>
+
+  /**
+   * 드롭다운 컴포넌트
+   */
 
   import Popper from "popper.js";
 
