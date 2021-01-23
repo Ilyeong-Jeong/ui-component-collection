@@ -35,6 +35,11 @@ export default [
     link: "link" 
   }, 
   {
+    key : "messagebox",
+    name: "Messagebox",
+    link: "messagebox" 
+  }, 
+  {
     key : "pretty-scroll",
     name: "Pretty Scroll",
     link: "prettyScroll" 

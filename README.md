@@ -1,5 +1,5 @@
 # ui-component-collection
-**커스텀 UI 컴포넌트 플레이그라운드**
+**커스텀 UI 컴포넌트 컬렉션 플레이그라운드**
 
 ## Tech Stack
 Node v14 base
@@ -26,6 +26,7 @@ npm run dev
 - Icon
 - Inputs 
 - Link
+- Messagebox
 - Pretty Scroll
 - Radio
 - Switch
