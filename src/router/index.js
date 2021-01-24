@@ -76,6 +76,11 @@ const router = new VueRouter({
           component: () => import("../page/switch.vue")          
         },
         {
+          name     : 'tab',
+          path     : 'tab',
+          component: () => import("../page/tab.vue")          
+        },
+        {
           name     : 'toaster',
           path     : 'toaster',
           component: () => import("../page/toaster.vue")          

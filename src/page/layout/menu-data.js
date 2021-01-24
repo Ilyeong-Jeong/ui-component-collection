@@ -6,7 +6,7 @@ export default [
   },
   {
     key : "button",
-    name: "Button",
+    name: "Buttons",
     link: "button" 
   },
   {
@@ -26,7 +26,7 @@ export default [
   },       
   {
     key : "input",
-    name: "Input",
+    name: "Inputs",
     link: "input" 
   },         
   {
@@ -53,6 +53,11 @@ export default [
     key : "switch",
     name: "Switch",
     link: "switch" 
+  },
+  {
+    key : "tab",
+    name: "Tab",
+    link: "tab" 
   },
   {
     key : "toaster",
