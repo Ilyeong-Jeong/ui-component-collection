@@ -27,6 +27,10 @@
       @apply bg-green-primary;
     }
 
+    &.is-default {
+      @apply bg-grey-primary;
+    }
+
     &.is-secondary {
       @apply bg-blue-dim2 text-blue-primary;
 
@@ -45,37 +49,9 @@
       &.is-success {
         @apply bg-green-dim2 text-green-primary;
       }
-    }
 
-    &:hover {
-      @apply shadow bg-blue-primary text-white;
-
-      &.is-error {
-        @apply bg-red-primary;
-      }
-
-      &.is-warning {
-        @apply bg-yellow-primary;
-      }
-
-      &.is-success {
-        @apply bg-green-primary;
-      }
-    }
-
-    &.is-secondary:hover {
-      @apply bg-blue-dim2 text-blue-primary;
-
-      &.is-error {
-        @apply bg-red-dim2 text-red-primary;
-      }
-
-      &.is-warning {
-        @apply bg-yellow-dim2 text-yellow-primary;
-      }
-
-      &.is-success {
-        @apply bg-green-dim2 text-green-primary;
+      &.is-default {
+        @apply bg-grey-dim2 text-grey-primary;
       }
     }
 
@@ -93,6 +69,10 @@
       &.is-success {
         @apply bg-green-dim;
       }
+
+      &.is-default {
+        @apply bg-grey-dim;
+      }
     }
 
     &:active {
@@ -109,21 +89,29 @@
       &.is-success {
         @apply bg-green-tint;
       }
+
+      &.is-default {
+        @apply bg-grey-tint;
+      }
     }
 
     &.is-secondary:active {
-      @apply bg-blue-dim2 text-blue-tint;
+      @apply bg-blue-primary text-blue-tint;
 
       &.is-error {
-        @apply bg-red-dim2 text-red-tint;
+        @apply bg-red-primary text-red-tint;
       }
 
       &.is-warning {
-        @apply bg-yellow-dim2 text-yellow-tint;
+        @apply bg-yellow-primary text-yellow-tint;
       }
 
       &.is-success {
-        @apply bg-green-dim2 text-green-tint;
+        @apply bg-green-primary text-green-tint;
+      }
+
+      &.is-default {
+        @apply bg-grey-primary text-grey-tint;
       }
     }
 
@@ -203,6 +191,10 @@
         type: Boolean
       },
 
+      default: {
+        type: Boolean
+      },
+
       width: {
         default : null
       },
@@ -222,7 +214,8 @@
           loading  : 'is-loading',
           icon     : "is-icon",
           secondary: 'is-secondary',
-          rounded  : 'is-rounded'
+          rounded  : 'is-rounded',
+          default  : 'is-default'
         });
       },
 

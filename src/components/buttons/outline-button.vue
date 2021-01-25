@@ -28,6 +28,10 @@
       @apply text-green-primary border-green-primary;
     }
 
+    &.is-default {
+      @apply text-grey-primary border-grey-primary;
+    }
+
     &:hover {
       @apply shadow;
     }
@@ -46,6 +50,10 @@
       &.is-success {
         @apply text-green-tint border-green-tint;
       }
+
+      &.is-default {
+        @apply text-grey-tint border-grey-tint;
+      }      
     }
 
     &.is-icon {
@@ -120,6 +128,10 @@
         type: Boolean
       },
 
+      default: {
+        type: Boolean
+      },
+
       width: {
         default : null
       },
@@ -138,7 +150,8 @@
         return this.booleanPropMatcher({
           loading: 'is-loading',
           icon   : "is-icon",
-          rounded: 'is-rounded'
+          rounded: 'is-rounded',
+          default: 'is-default'
         });
       },
 

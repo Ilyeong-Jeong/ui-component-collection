@@ -29,7 +29,11 @@
     }
 
     &:hover {
-      @apply text-blue-dim;
+      @apply text-grey-dim;
+
+      &.is-active {
+        @apply text-blue-dim;
+      }
 
       &.is-error {
         @apply text-red-dim;
@@ -45,7 +49,11 @@
     }
 
     &:active {
-      @apply text-blue-tint;
+      @apply text-grey-tint;
+
+      &.is-active {
+        @apply text-blue-tint;
+      }
 
       &.is-error {
         @apply text-red-tint;

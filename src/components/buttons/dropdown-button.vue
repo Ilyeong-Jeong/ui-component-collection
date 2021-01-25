@@ -98,6 +98,10 @@
       iconCls: {
         type   : String,
         default: null
+      },
+
+      default: {
+        type: Boolean
       }
     },
 
@@ -108,6 +112,12 @@
     },
 
     computed: {
+      cls () {
+        return this.booleanPropMatcher({
+          default: 'is-default'
+        });        
+      },
+
       dropdownOpened () {
         if(this.opened == null || this.opened == undefined || this.loading) {
           return this.lOpened;

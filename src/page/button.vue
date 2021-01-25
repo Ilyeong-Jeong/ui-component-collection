@@ -18,6 +18,8 @@
 
         <component-button success>Button</component-button>
 
+        <component-button default>Button</component-button>
+
         <component-button small>Button</component-button>
 
         <component-button large>Button</component-button>
@@ -103,6 +105,8 @@
 
         <component-button secondary success>Button</component-button>
 
+        <component-button secondary default>Button</component-button>
+
         <component-button secondary small>Button</component-button>
 
         <component-button secondary large>Button</component-button>
@@ -187,6 +191,8 @@
         <component-outline-button warning>Button</component-outline-button>
 
         <component-outline-button success>Button</component-outline-button>
+
+        <component-outline-button default>Button</component-outline-button>
 
         <component-outline-button small>Button</component-outline-button>
 
@@ -311,6 +317,18 @@
 
         <component-dropdown-button
           success
+        >
+          button
+          <div 
+            class="bg-grey-dim2"
+            slot="contents"
+          >
+            dropdown contents
+          </div>
+        </component-dropdown-button>
+
+        <component-dropdown-button
+          default
         >
           button
           <div 

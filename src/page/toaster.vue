@@ -4,7 +4,7 @@
     desc="Toaster Component Example"
   >
     <template slot="panel-list">
-      <component-button @click="showToast('default')">Default</component-button>
+      <component-button default @click="showToast('default')">Default</component-button>
       <component-button @click="showToast('active')">Active</component-button>
       <component-button error @click="showToast('error')">Error</component-button>
       <component-button warning @click="showToast('warning')">Warning</component-button>
