@@ -61,6 +61,11 @@ const router = new VueRouter({
           component: () => import("../page/messagebox.vue")          
         },
         {
+          name     : 'modal',
+          path     : 'modal',
+          component: () => import("../page/modal.vue")          
+        },
+        {
           name     : 'prettyScroll',
           path     : 'prettyScroll',
           component: () => import("../page/pretty-scroll.vue")          

@@ -27,6 +27,7 @@ npm run dev
 - Inputs 
 - Link
 - Messagebox
+- Modal
 - Pretty Scroll
 - Radio
 - Switch

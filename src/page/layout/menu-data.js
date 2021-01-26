@@ -40,6 +40,11 @@ export default [
     link: "messagebox" 
   }, 
   {
+    key : "modal",
+    name: "Modal",
+    link: "modal" 
+  }, 
+  {
     key : "pretty-scroll",
     name: "Pretty Scroll",
     link: "prettyScroll" 
