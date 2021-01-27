@@ -4,7 +4,7 @@
     @apply bg-grey-dim2 w-80 p-4;
 
     .component-search-input {
-      @apply w-full p-2;
+      @apply w-full p-2 flex;
     }
 
     .menu-name {
@@ -33,7 +33,17 @@
 <template>
   <div class="layout-side-menu">
     <div class="component-search-input">
-      <component-input placeholder="search" width="100%" v-model="searchName"></component-input>
+      <component-input 
+        placeholder="search" 
+        width="100%" 
+        v-model="searchName"
+      ></component-input>
+      
+      <component-icon-button 
+        icon="fas fa-home" 
+        :disabled="$route.name === 'index'" 
+        @click="routerPush('index')"
+      ></component-icon-button>
     </div>
 
     <component-pretty-scroll>
@@ -57,7 +67,8 @@
 <script>
 
   import PrettyScroll from "../../components/pretty-scroll.vue";
-  import TextInput    from "../../components/inputs/text-input.vue"
+  import TextInput    from "../../components/inputs/text-input.vue";
+  import IconButton   from "../../components/buttons/icon-button.vue";
 
   import MenuData from "./menu-data";
 
@@ -89,7 +100,8 @@
 
     components: {
       "component-pretty-scroll": PrettyScroll,
-      "component-input" : TextInput
+      "component-input"        : TextInput,
+      "component-icon-button"  : IconButton
     }
 
   }

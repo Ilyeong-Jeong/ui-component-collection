@@ -91,6 +91,11 @@ const router = new VueRouter({
           component: () => import("../page/toaster.vue")          
         },
         {
+          name     : 'tooltip',
+          path     : 'tooltip',
+          component: () => import("../page/tooltip.vue")          
+        },
+        {
           name     : 'tree',
           path     : 'tree',
           component: () => import("../page/tree.vue")          

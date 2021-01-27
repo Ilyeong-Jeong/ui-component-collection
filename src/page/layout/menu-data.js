@@ -70,6 +70,11 @@ export default [
     link: "toaster" 
   },
   {
+    key : "tooltip",
+    name: "Tooltip",
+    link: "tooltip" 
+  },
+  {
     key : "tree",
     name: "Tree",
     link: "tree" 

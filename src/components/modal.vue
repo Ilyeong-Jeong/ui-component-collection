@@ -70,6 +70,10 @@
 
 <script>
 
+  /**
+   * 모달 컴포넌트
+   */
+
   import globalEventMixin from "./mixins/global-event";
   import { globalEvents } from "./mixins/global-event";
 

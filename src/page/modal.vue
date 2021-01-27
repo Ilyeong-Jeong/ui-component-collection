@@ -5,6 +5,7 @@
   >
     <template slot="panel-list">
       <component-button @click="showModal = true">modal</component-button>
+      <component-button default @click="showFooter = true">footer</component-button>
       <component-button error @click="showAlert = true">alert</component-button>
     </template>  
 
@@ -14,6 +15,19 @@
       @close="showModal = false"
     >
       <div>Modal Component Content</div>
+    </component-modal>
+
+    <component-modal
+      :show="showFooter"
+      title="Modal(Footer)"
+      @close="showFooter = false"
+    >
+      <div>Modal(Footer) Component Content</div>
+
+      <template slot="footer">
+        <component-button class="mr-2">confirm</component-button>
+        <component-button error @click="showFooter = false">close</component-button>
+      </template>
     </component-modal>
 
     <component-modal
@@ -30,16 +44,16 @@
 
 <script>
 
-  import Modal from "../components/modal.vue";
-
+  import Modal  from "../components/modal.vue";
   import Button from "../components/buttons/button.vue";
 
   export default {
 
     data () {
       return {
-        showModal: false,
-        showAlert: false
+        showModal : false,
+        showFooter: false,
+        showAlert : false
       }
     },
 

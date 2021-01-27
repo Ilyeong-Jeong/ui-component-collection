@@ -15,7 +15,6 @@
 
 </style>
 
-
 <template>
   <span :class="['component-icon', cls]" :style="style">
     <i :class="icon"></i>

@@ -24,7 +24,6 @@
 
 </style>
 
-
 <template>
   <div :class="['component-messagebox', stateCls]">
     {{ message }}
@@ -32,6 +31,10 @@
 </template>
 
 <script>
+
+  /**
+   * 메시지박스 컴포넌트
+   */
 
   import Component from "./mixins/component";
   import State     from "./mixins/state";
