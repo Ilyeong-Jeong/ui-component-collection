@@ -26,16 +26,17 @@ npm run dev
 - Icon
 - Inputs 
 - Link
+- Loader
 - Messagebox
 - Modal
 - Pretty Scroll
 - Radio
 - Switch
 - Tab
+- Tag(incomplete)
 - Toaster
 - Tooltip
 - Tree
 
 ## TODO List
 - Inputs(Date Input, Masked Input)
-- Spinner

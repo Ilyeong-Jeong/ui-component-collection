@@ -56,6 +56,11 @@ const router = new VueRouter({
           component: () => import("../page/link.vue")          
         },
         {
+          name     : 'loader',
+          path     : 'loader',
+          component: () => import("../page/loader.vue")          
+        },
+        {
           name     : 'messagebox',
           path     : 'messagebox',
           component: () => import("../page/messagebox.vue")          
@@ -84,6 +89,11 @@ const router = new VueRouter({
           name     : 'tab',
           path     : 'tab',
           component: () => import("../page/tab.vue")          
+        },
+        {
+          name     : 'tag',
+          path     : 'tag',
+          component: () => import("../page/tag.vue")          
         },
         {
           name     : 'toaster',

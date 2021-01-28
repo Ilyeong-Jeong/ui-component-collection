@@ -55,33 +55,31 @@
     mixins: [globalEventMixin],
 
     props: {
-
       /**
-       * contents container
-       * Element
+       * contents container element
        */
       container: {
 
       },
 
       /**
-        드롭다운이 닫혀있는지 열려있는지 여부
-      */
+       * 드롭다운이 닫혀있는지 열려있는지 여부
+       */
       opened: {
         type: Boolean
       },
 
       /**
-        trigger
-        [click, mouseover]
+       * trigger
+       * [click, mouseover]
        */
       trigger: {
         default: "click"
       },
 
       /**
-        드롭다운이 열릴 방향. 상하 좌우
-        [up, down, left, right]
+       * 드롭다운이 열릴 방향. 상하 좌우
+       * [up, down, left, right]
       */
       direction: {
         type: String,
@@ -92,9 +90,9 @@
       },
 
       /**
-        드롭다운 메뉴 정렬 방향. 시작 끝 가운데 (없으면 가운데)
-        [start, end]
-      */
+       * 드롭다운 메뉴 정렬 방향. 시작 끝 가운데 (없으면 가운데)
+       * [start, end]
+       */
       align: {
         type   : String,
         default: "start",
@@ -108,24 +106,24 @@
       },
 
       /**
-        드롭다운 토글 사용불가 여부
-      */
+       * 드롭다운 토글 사용불가 여부
+       */
       disabled: {
         type   : Boolean,
         default: false
       },
 
       /**
-        컨텐츠 내부 클릭시 자동으로 닫히게 할 것인가
-      */
+       * 컨텐츠 내부 클릭시 자동으로 닫히게 할 것인가
+       */
       autoclose: {
         type   : Boolean,
         default: true
       },
 
       /**
-        윈도우 영역 클릭했을때 자동으로 닫히게 할 것인가
-      */
+       * 윈도우 영역 클릭했을때 자동으로 닫히게 할 것인가
+       */
       bodyclose: {
         type   : Boolean,
         default: true
@@ -140,8 +138,8 @@
       },
 
       /**
-        화면이 작거나, 드롭다운 컨텐츠가 매우 클때 자동으로 스크롤을 잡을 것인가 여부
-      */
+       * 화면이 작거나, 드롭다운 컨텐츠가 매우 클때 자동으로 스크롤을 잡을 것인가 여부
+       */
       autoscroll: {
         type   : Boolean,
         default: true

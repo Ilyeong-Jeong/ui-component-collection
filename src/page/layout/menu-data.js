@@ -35,6 +35,11 @@ export default [
     link: "link" 
   }, 
   {
+    key : "loader",
+    name: "Loader",
+    link: "loader" 
+  }, 
+  {
     key : "messagebox",
     name: "Messagebox",
     link: "messagebox" 
@@ -63,6 +68,11 @@ export default [
     key : "tab",
     name: "Tab",
     link: "tab" 
+  },
+  {
+    key : "tag",
+    name: "Tag(incomplete)",
+    link: "tag" 
   },
   {
     key : "toaster",
