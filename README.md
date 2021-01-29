@@ -22,6 +22,7 @@ npm run dev
 - Avatar
 - Buttons
 - Checkbox
+- Content Panel
 - Dashboard Widget
 - Icon
 - Inputs 
@@ -33,7 +34,7 @@ npm run dev
 - Radio
 - Switch
 - Tab
-- Tag(incomplete)
+- Tag 
 - Toaster
 - Tooltip
 - Tree

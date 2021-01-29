@@ -15,6 +15,11 @@ export default [
     link: "checkbox" 
   },
   {
+    key : "content-panel",
+    name: "Content Panel",
+    link: "contentPanel" 
+  },
+  {
     key : "dashboard-widget",
     name: "Dashboard Widget",
     link: "dashboardWidget" 
@@ -71,7 +76,7 @@ export default [
   },
   {
     key : "tag",
-    name: "Tag(incomplete)",
+    name: "Tag",
     link: "tag" 
   },
   {

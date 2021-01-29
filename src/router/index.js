@@ -36,6 +36,11 @@ const router = new VueRouter({
           component: () => import("../page/checkbox.vue")          
         },
         {
+          name     : 'contentPanel',
+          path     : 'contentPanel',
+          component: () => import("../page/content-panel.vue")          
+        },
+        {
           name     : 'dashboardWidget',
           path     : 'dashboardwidget',
           component: () => import("../page/dashboard-widget.vue")          

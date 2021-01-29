@@ -1,11 +1,3 @@
-<style lang="scss">
-
-  .component-dashboard-widget {
-
-  }
-
-</style>
-
 <template>
 
   <component-content-panel

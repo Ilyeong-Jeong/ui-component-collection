@@ -51,7 +51,7 @@
       // loader 색상
       color: {
         type   : String,
-        default: "#555"
+        default: "#777B94"
       },
 
       // loader 크기

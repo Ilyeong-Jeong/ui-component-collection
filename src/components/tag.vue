@@ -1,21 +1,62 @@
 <style lang="scss">
 
   .component-tag {
-    @apply inline-flex px-2 py-half rounded;
+    @apply relative inline-block rounded;
     @apply text-white items-center;
 
-    .tag-text {
-      @apply flex-auto;
+    .tag-wrapper {
+      @apply flex px-4 py-1;
+      
+      .tag-text {
+        @apply inline-block w-full;
+      }
+
+      .tag-button {
+        @apply absolute flex top-0 right-0;
+      }
     }
 
-    .tag-button {
-      @apply w-4 h-4 ml-1;
+    &.is-editable {
+      .tag-wrapper {
+        @apply pr-8;
+      }
+    }
 
-      flex: 0 0 auto;
+    &.is-small {
+      @apply text-small;
+
+      .tag-wrapper {
+        @apply px-2 py-half;
+      }
+
+      &.is-editable {
+        .tag-wrapper {
+          @apply pr-6;
+
+          .tag-button {
+            top  : -4px;
+            right: -4px;
+          }
+        }
+      }
     }
 
     &.is-large {
-      @apply px-3 py-1 text-large;
+      @apply text-large;
+
+      .tag-wrapper {
+        @apply px-6 py-2;
+      }
+
+      &.is-editable {
+        .tag-wrapper {
+          @apply pr-10;
+
+          .tag-button {
+            top: 6px;
+          }
+        }
+      }      
     }
   }
 
@@ -26,18 +67,20 @@
     :class="['component-tag', cls, sizeCls]"
     :style="style"
   >
-    <span class="tag-text">
-      <slot></slot>
-    </span>
+    <div class="tag-wrapper">
+      <span class="tag-text">
+        <slot></slot>
+      </span>
 
-    <component-icon-button
-      v-if="editable"
-      class="tag-button"
-      v-bind="$attrs"
-      v-on="$listeners" 
-      icon="fas fa-times"
-      :reversal="true"
-    ></component-icon-button>
+      <component-icon-button
+        v-if="editable"
+        class="tag-button"
+        v-bind="$attrs"
+        v-on="$listeners" 
+        icon="fas fa-times"
+        :reversal="true"
+      ></component-icon-button>
+    </div>
   </div>
 </template>
 
@@ -48,14 +91,14 @@
    */
 
   import Component from "./mixins/component";
-  import Size      from "./mixins/size";
   import Color     from "./mixins/color"; 
+  import Size      from "./mixins/size";
 
   import IconButton from "./buttons/icon-button";
 
   export default {
 
-    mixins: [Component, Size, Color],
+    mixins: [Component, Color, Size],
 
     props: {
       editable: {
@@ -66,7 +109,11 @@
 
     computed: {
       cls () {
-        return this.toColorCls("bg");
+        const editCls = this.booleanPropMatcher({
+          editable : 'is-editable'
+        });
+
+        return [...editCls, this.toColorCls("bg")];
       },
 
       style () {

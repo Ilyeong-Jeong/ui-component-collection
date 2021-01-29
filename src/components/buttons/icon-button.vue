@@ -90,8 +90,7 @@
       :icon="icon"
       :autoWidth="autoWidth"
       :autoHeight="autoHeight"
-    >
-    </component-icon>
+    ></component-icon>
   </button-base>
 </template>
 
