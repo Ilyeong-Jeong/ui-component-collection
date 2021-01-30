@@ -7,7 +7,7 @@
     class="temp-component-dashboard-widget"
     title="Temp Widget"
   >
-    임시로 만든 대시보드 위젯입니다.
+    This is a dashboard widget that was created temporarily. Try adjusting the size and position.
   </dashboard-widget>
 </template>
 

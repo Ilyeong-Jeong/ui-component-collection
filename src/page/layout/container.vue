@@ -1,7 +1,7 @@
 <style lang="scss">
 
   .layout-container {
-    @apply w-full bg-white overflow-auto;
+    @apply w-full h-full bg-white overflow-auto;
   }
 
 </style>

@@ -43,20 +43,6 @@ module.exports = {
         dim    : '#53C87E',
         dim2   : '#A2EABC',
         tint   : '#186049',
-      },
-
-      purple: {
-        primary: '#7768E5',
-        dim    : '#B098E2',
-        dim2   : '#D9CBF5',
-        tint   : '#54499E',
-      },
-      
-      cyan: {
-        primary: '#00C8FF',
-        dim    : '#66DEFF',
-        dim2   : '#CCF4FF',
-        tint   : '#0E84A6',
       }
     },
 

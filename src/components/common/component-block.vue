@@ -25,7 +25,7 @@
       {{ name }}
     </div>
 
-    <div class="block-list">
+    <div class="block-list" v-if="$slots['block-list']">
       <slot name="block-list"></slot>
     </div>
 

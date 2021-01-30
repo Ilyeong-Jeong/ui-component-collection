@@ -1,7 +1,7 @@
 <style lang="scss">
 
   .common-component-panel {
-    @apply p-4;
+    @apply p-4 flex flex-col;
 
     .panel-title {
       @apply text-title font-bold;
@@ -33,7 +33,7 @@
       {{ desc }}
     </div>
 
-    <div class="panel-list">
+    <div class="panel-list" v-if="$slots['panel-list']">
       <slot name="panel-list"></slot>
     </div>
 
