@@ -1,6 +1,6 @@
 <style lang="scss">
 
-  .common-component-block {
+  .page-block {
     @apply mb-4;
     
     .block-name {
@@ -20,7 +20,7 @@
 
 <template>
 
-  <div class="common-component-block">
+  <div class="page-block">
     <div class="block-name">
       {{ name }}
     </div>

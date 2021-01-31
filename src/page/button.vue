@@ -1,10 +1,10 @@
 <template>
-  <common-panel
+  <page-panel
     title="Button"
     desc="Button Component Example"
   >
     <!-- Default Button -->
-    <common-block
+    <page-block
       name="Default Button"
     >
       <template slot="block-list">
@@ -88,10 +88,10 @@
           ></component-icon>
         </component-button>
       </template>
-    </common-block>
+    </page-block>
 
     <!-- Secondary Button -->
-    <common-block
+    <page-block
       name="Secondary Button"
     >
       <template slot="block-list">
@@ -175,10 +175,10 @@
           ></component-icon>
         </component-button>
       </template>
-    </common-block>
+    </page-block>
 
     <!-- Outline Button -->
-    <common-block
+    <page-block
       name="Outline Button"
     >
       <template slot="block-list">
@@ -262,10 +262,10 @@
           ></component-icon>
         </component-outline-button>
       </template>
-    </common-block>
+    </page-block>
 
     <!-- Dropdown Button -->
-    <common-block
+    <page-block
       name="Dropdown Button"
     >
       <template slot="block-list">
@@ -387,10 +387,10 @@
           </div>
         </component-dropdown-button>  
       </template>
-    </common-block>
+    </page-block>
 
     <!-- Icon Button -->
-    <common-block
+    <page-block
       name="Icon Button"
     >
       <template slot="block-list">
@@ -423,8 +423,8 @@
           success
         ></component-icon-button>        
       </template>
-    </common-block>
-  </common-panel>
+    </page-block>
+  </page-panel>
 </template>
 
 <script>

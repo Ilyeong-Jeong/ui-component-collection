@@ -1,10 +1,10 @@
 <template>
-  <common-panel
+  <page-panel
     title="Input"
     desc="Input Component Example"
   >
     <!-- Text Input -->
-    <common-block
+    <page-block
       name="Text Input"
     >
       <template slot="block-list">
@@ -18,10 +18,10 @@
         <component-input small placeholder="small"></component-input>
         <component-input large placeholder="large"></component-input> 
       </template>
-    </common-block>
+    </page-block>
 
     <!-- Icon Input -->
-    <common-block
+    <page-block
       name="Icon Input"
     >
       <template slot="block-list">
@@ -84,10 +84,10 @@
           placeholder="large"
         ></component-icon-input>
       </template>
-    </common-block> 
+    </page-block> 
 
     <!-- Selectbox -->
-    <common-block
+    <page-block
       name="Selectbox (searchable)"
     >
       <template slot="block-list">
@@ -170,10 +170,10 @@
           @change="(val) => value = val"
         ></component-selectbox>
       </template>
-    </common-block> 
+    </page-block> 
 
     <!-- Button Input -->
-    <common-block
+    <page-block
       name="Button Input"
     >
       <template slot="block-list">
@@ -200,10 +200,10 @@
           buttonText="btn"
         ></component-button-input>
       </template>
-    </common-block>
+    </page-block>
 
     <!-- Textarea -->
-    <common-block
+    <page-block
       name="Textarea"
     >
       <template slot="block-list">
@@ -214,8 +214,8 @@
         <component-textarea width="250px" warning placeholder="warning"></component-textarea>
         <component-textarea width="250px" success placeholder="success"></component-textarea>
       </template>
-    </common-block>    
-  </common-panel>
+    </page-block>    
+  </page-panel>
 </template>
 
 <script>

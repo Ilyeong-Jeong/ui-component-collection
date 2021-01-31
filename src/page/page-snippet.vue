@@ -1,12 +1,12 @@
 <template>
-  <common-panel
+  <page-panel
     title="Snippet"
     desc="Component Example"
   >
     <template slot="panel-list">
 
     </template>  
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

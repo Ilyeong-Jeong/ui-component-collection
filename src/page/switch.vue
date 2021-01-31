@@ -1,5 +1,5 @@
 <template>
-  <common-panel
+  <page-panel
     title="Switch"
     desc="Switch Component Example"
   >
@@ -45,7 +45,7 @@
         @change="(val) => checked = val"
       ></component-switch>
     </template>  
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

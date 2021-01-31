@@ -4,13 +4,13 @@ import Router from "./router";
 
 import Style from "./style/app.scss";
 
-import CommonComponentPanel from "./components/common/component-panel.vue";
-import CommonComponentBlock from "./components/common/component-block.vue";
+import PagePanel from "./page/components/page-panel.vue";
+import PageBlock from "./page/components/page-block.vue";
 
 import TreeItem from "./components/tree/tree-item.vue";
 
-Vue.component('common-panel', CommonComponentPanel);
-Vue.component('common-block', CommonComponentBlock);
+Vue.component('page-panel', PagePanel);
+Vue.component('page-block', PageBlock);
 
 Vue.component('component-tree-item', TreeItem);
 

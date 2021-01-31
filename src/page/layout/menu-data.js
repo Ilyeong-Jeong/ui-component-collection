@@ -76,7 +76,7 @@ export default [
   },
   {
     key : "tag",
-    name: "Tag",
+    name: "Tags",
     link: "tag" 
   },
   {

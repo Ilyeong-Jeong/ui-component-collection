@@ -1,5 +1,5 @@
 <template>
-  <common-panel
+  <page-panel
     title="Checkbox"
     desc="Checkbox Component Example"
   >
@@ -47,7 +47,7 @@
       ></component-checkbox>
 
     </template>  
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

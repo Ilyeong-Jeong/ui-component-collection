@@ -1,5 +1,5 @@
 <template>
-  <common-panel
+  <page-panel
     title="Pretty Scroll"
     desc="Ornamental fine scroll Component Example"
   >
@@ -13,7 +13,7 @@
         Scroll down. 
       </div>
     </component-pretty-scroll>
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

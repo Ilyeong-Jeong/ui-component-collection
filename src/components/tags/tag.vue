@@ -90,11 +90,11 @@
    * 태그 컴포넌트
    */
 
-  import Component from "./mixins/component";
-  import Color     from "./mixins/color"; 
-  import Size      from "./mixins/size";
+  import Component from "../mixins/component";
+  import Color     from "../mixins/color"; 
+  import Size      from "../mixins/size";
 
-  import IconButton from "./buttons/icon-button";
+  import IconButton from "../buttons/icon-button";
 
   export default {
 

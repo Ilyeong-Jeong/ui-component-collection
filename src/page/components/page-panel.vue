@@ -1,6 +1,6 @@
 <style lang="scss">
 
-  .common-component-panel {
+  .page-panel {
     @apply p-4 flex flex-col;
 
     .panel-title {
@@ -24,7 +24,7 @@
 
 <template>
 
-  <div class="common-component-panel">
+  <div class="page-panel">
     <div class="panel-title">
       {{ title }}
     </div>
@@ -45,6 +45,7 @@
 <script>
 
   export default {
+
     props: {
       title: {
         type: String
@@ -54,6 +55,7 @@
         type: String
       },
     }
+    
   }
 
 </script>

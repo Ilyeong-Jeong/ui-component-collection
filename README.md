@@ -34,7 +34,7 @@ npm run dev
 - Radio
 - Switch
 - Tab
-- Tag 
+- Tags 
 - Toaster
 - Tooltip
 - Tree

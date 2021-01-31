@@ -1,5 +1,5 @@
 <template>
-  <common-panel
+  <page-panel
     title="Link"
     desc="Link Component Example"
   >
@@ -10,7 +10,7 @@
       <component-link disabled>disabled link</component-link>
       <component-link reversal>reversal link</component-link>
     </template>  
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

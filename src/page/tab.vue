@@ -1,5 +1,5 @@
 <template>
-  <common-panel
+  <page-panel
     title="Tab"
     desc="Tab Component Example"
   >
@@ -56,7 +56,7 @@
         Disabled Tab Content (You won't see it anyway...)
       </div>
     </template>  
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

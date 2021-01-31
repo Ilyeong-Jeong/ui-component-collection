@@ -1,9 +1,9 @@
 <template>
-  <common-panel
+  <page-panel
     title="Content Panel"
     desc="Content Panel Component Example"
   >
-    <common-block
+    <page-block
       name="Content Panel"
     >
       <template slot="block-list">
@@ -19,9 +19,9 @@
           Content Panel Contents
         </component-content-panel>        
       </template>
-    </common-block>
+    </page-block>
 
-    <common-block
+    <page-block
       name="Content Panel(Headless)"
     >
       <template slot="block-list">
@@ -32,9 +32,9 @@
           Content Panel(Headless) Contents
         </component-content-panel>        
       </template>
-    </common-block>
+    </page-block>
 
-    <common-block
+    <page-block
       name="Content Panel(Tab)"
     >
       <template slot="block-list">
@@ -81,8 +81,8 @@
           </div>
         </component-content-panel>        
       </template>
-    </common-block>
-  </common-panel>
+    </page-block>
+  </page-panel>
 </template>
 
 <script>

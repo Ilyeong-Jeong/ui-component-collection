@@ -19,14 +19,14 @@
 </style>
 
 <template>
-  <common-panel
+  <page-panel
     class="w-full h-full"
     title="UI Component Collection Index Page."
     desc="Select the components you want to see from the left menu. And below is the basic color and font size used by components."
   >
     <div class="index">
       <component-content-panel>
-        <common-block
+        <page-block
           name="Typography"
         >
           <template v-for="t in typo">
@@ -34,11 +34,11 @@
               {{ text }}
             </p>
           </template>
-        </common-block>  
+        </page-block>  
       </component-content-panel>
 
       <component-content-panel height="100%">
-        <common-block
+        <page-block
           name="Color"
         >
           <div class="flex flex-row my-2">
@@ -63,10 +63,10 @@
               </template>
             </div>
           </template>
-        </common-block>
+        </page-block>
       </component-content-panel>
     </div>
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

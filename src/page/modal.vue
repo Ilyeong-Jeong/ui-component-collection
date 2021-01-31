@@ -1,5 +1,5 @@
 <template>
-  <common-panel
+  <page-panel
     title="Modal"
     desc="Modal Component Example"
   >
@@ -39,7 +39,7 @@
 
       <component-button slot="footer" error @click="showAlert = false">close</component-button>
     </component-modal>
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

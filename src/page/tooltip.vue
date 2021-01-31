@@ -1,5 +1,5 @@
 <template>
-  <common-panel
+  <page-panel
     title="Tooltip"
     desc="Tooltip Component Example"
   >
@@ -44,7 +44,7 @@
         </div>
       </component-tooltip>
     </template> 
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

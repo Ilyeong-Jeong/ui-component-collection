@@ -1,5 +1,5 @@
 <template>
-  <common-panel
+  <page-panel
     title="Icon"
     desc="Font Awesome base Icon Component Example"
   >
@@ -31,7 +31,7 @@
       ></component-icon>
 
     </template>  
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

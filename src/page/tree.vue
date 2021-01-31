@@ -1,5 +1,5 @@
 <template>
-  <common-panel
+  <page-panel
     title="Tree"
     desc="Reordering Tree Component Example"
   >
@@ -90,7 +90,7 @@
         ></component-tree>
       </component-content-panel>
     </template>
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

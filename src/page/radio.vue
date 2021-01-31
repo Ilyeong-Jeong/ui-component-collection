@@ -1,5 +1,5 @@
 <template>
-  <common-panel
+  <page-panel
     title="Radio"
     desc="Radio Component Example"
   >
@@ -59,7 +59,7 @@
         @change="(val) => valueRadio = val"
       ></component-radio>
     </template>  
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

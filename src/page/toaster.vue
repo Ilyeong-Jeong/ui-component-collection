@@ -1,5 +1,5 @@
 <template>
-  <common-panel
+  <page-panel
     title="Toaster"
     desc="Toaster Component Example"
   >
@@ -13,7 +13,7 @@
     </template>  
 
     <component-toaster ref="toaster"></component-toaster>
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <common-panel
+  <page-panel
     title="Messagebox"
     desc="Messagebox Component Example"
   >
@@ -10,7 +10,7 @@
       <component-messagebox warning :message="message"></component-messagebox>
       <component-messagebox success :message="message"></component-messagebox>
     </template>  
-  </common-panel>
+  </page-panel>
 </template>
 
 <script>

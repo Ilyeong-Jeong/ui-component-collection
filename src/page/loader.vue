@@ -1,9 +1,9 @@
 <template>
-  <common-panel
+  <page-panel
     title="Loader"
     desc="Loader Component Example"
   >
-    <common-block
+    <page-block
       name="Dot Loader"
     >
       <template slot="block-list">
@@ -13,9 +13,9 @@
         <component-loader color="#FDB05E"></component-loader>
         <component-loader color="#2C8E6E"></component-loader>
       </template>
-    </common-block>
+    </page-block>
 
-    <common-block
+    <page-block
       name="Spin Loader"
     >
       <template slot="block-list">
@@ -25,9 +25,9 @@
         <component-loader kind="spin" color="#FDB05E"></component-loader>
         <component-loader kind="spin" color="#2C8E6E"></component-loader>
       </template>
-    </common-block>
+    </page-block>
 
-    <common-block
+    <page-block
       name="Bounce Loader"
     >
       <template slot="block-list">
@@ -37,8 +37,8 @@
         <component-loader kind="bounce" color="#FDB05E"></component-loader>
         <component-loader kind="bounce" color="#2C8E6E"></component-loader>
       </template>
-    </common-block>
-  </common-panel>
+    </page-block>
+  </page-panel>
 </template>
 
 <script>
