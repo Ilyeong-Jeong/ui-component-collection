@@ -50,7 +50,7 @@
 <script>
 
   import Tooltip from "../components/tooltip.vue";
-  import Button from "../components/buttons/button.vue";
+  import Button  from "../components/buttons/button.vue";
 
   export default {
 

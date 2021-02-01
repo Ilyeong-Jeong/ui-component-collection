@@ -46,6 +46,11 @@ const router = new VueRouter({
           component: () => import("../page/dashboard-widget.vue")          
         },
         {
+          name     : 'divider',
+          path     : 'divider',
+          component: () => import("../page/divider.vue")          
+        },
+        {
           name     : 'icon',
           path     : 'icon',
           component: () => import("../page/icon.vue")          

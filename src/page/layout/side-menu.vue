@@ -66,9 +66,9 @@
 
 <script>
 
-  import PrettyScroll from "../../components/pretty-scroll.vue";
-  import TextInput    from "../../components/inputs/text-input.vue";
-  import IconButton   from "../../components/buttons/icon-button.vue";
+  import PrettyScroll from "components/pretty-scroll.vue";
+  import TextInput    from "components/inputs/text-input.vue";
+  import IconButton   from "components/buttons/icon-button.vue";
 
   import MenuData from "./menu-data";
 

@@ -18,11 +18,16 @@ module.exports = {
   },
 
   resolve: {
-    extensions: [ '.vue', '.sass', '.js' ],
-
     alias: {
       vue$: 'vue/dist/vue.esm.js'
     },
+
+    extensions: [ '.vue', '.sass', '.js' ],
+
+    modules: [
+      path.resolve(__dirname, "src"),
+      "node_modules"
+    ]
   },
 
   module: {                                          

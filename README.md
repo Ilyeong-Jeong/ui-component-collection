@@ -24,6 +24,7 @@ npm run dev
 - Checkbox
 - Content Panel
 - Dashboard Widget
+- Divider 
 - Icon
 - Inputs 
 - Link

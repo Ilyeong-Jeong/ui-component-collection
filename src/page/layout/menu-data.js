@@ -25,6 +25,11 @@ export default [
     link: "dashboardWidget" 
   }, 
   {
+    key : "divider",
+    name: "Divider",
+    link: "divider" 
+  }, 
+  {
     key : "icon",
     name: "Icon",
     link: "icon" 
