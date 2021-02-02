@@ -1,10 +1,10 @@
 <style lang="scss">
 
   .layout-side-menu {
-    @apply bg-grey-dim2 w-80 p-4;
+    @apply bg-grey-dim2 w-80;
 
     .component-search-input {
-      @apply w-full p-2 flex;
+      @apply w-full px-6 pt-4 flex;
     }
 
     .menu-name {
@@ -46,7 +46,7 @@
       ></component-icon-button>
     </div>
 
-    <component-pretty-scroll>
+    <component-pretty-scroll class="p-4">
       <div 
         v-for="m in vMenu" 
         :key="m.key"

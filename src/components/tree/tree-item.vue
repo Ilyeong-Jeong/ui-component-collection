@@ -130,6 +130,7 @@
       ></component-text-input>
 
       <component-icon-button
+        class="mx-2"
         active 
         autoWidth 
         autoHeight 
@@ -150,17 +151,17 @@
         v-bind:data="data"
       >
         <component-icon-button
+          class="tree-item-action mx-2"
           autoWidth
           autoHeight
-          class="tree-item-action"
           icon="fas fa-pencil-alt"
           @click="editing = true"
         ></component-icon-button>
 
         <component-icon-button
+          class="tree-item-action"
           autoWidth
           autoHeight
-          class="tree-item-action"
           icon="fas fa-trash-alt"
         ></component-icon-button>
       </slot>
