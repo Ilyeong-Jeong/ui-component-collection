@@ -41,4 +41,4 @@ npm run dev
 - Tree
 
 ## TODO List
-- Inputs(Date Input, Masked Input)
+- Inputs(Date Input, Time Input)
