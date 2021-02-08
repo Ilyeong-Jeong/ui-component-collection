@@ -8,6 +8,10 @@
 
 <script>
 
+  /**
+   * 컬러 피커 컴포넌트
+   */
+
   import VueColor from "vue-color";
 
   export default {
