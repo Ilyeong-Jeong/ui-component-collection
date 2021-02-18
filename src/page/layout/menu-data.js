@@ -30,6 +30,11 @@ export default [
     link: "divider" 
   }, 
   {
+    key : "emoji",
+    name: "Emoji",
+    link: "emoji" 
+  },   
+  {
     key : "icon",
     name: "Icon",
     link: "icon" 
@@ -58,6 +63,11 @@ export default [
     key : "modal",
     name: "Modal",
     link: "modal" 
+  }, 
+  {
+    key : "picker",
+    name: "Picker",
+    link: "picker" 
   }, 
   {
     key : "pretty-scroll",

@@ -51,6 +51,11 @@ const router = new VueRouter({
           component: () => import("../page/divider.vue")          
         },
         {
+          name     : 'emoji',
+          path     : 'emoji',
+          component: () => import("../page/emoji.vue")          
+        },
+        {
           name     : 'icon',
           path     : 'icon',
           component: () => import("../page/icon.vue")          
@@ -79,6 +84,11 @@ const router = new VueRouter({
           name     : 'modal',
           path     : 'modal',
           component: () => import("../page/modal.vue")          
+        },
+        {
+          name     : 'picker',
+          path     : 'picker',
+          component: () => import("../page/picker.vue")          
         },
         {
           name     : 'prettyScroll',
