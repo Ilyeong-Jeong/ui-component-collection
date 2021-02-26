@@ -8,14 +8,20 @@
 
 <template>
   <div class="layout-container">
-    <router-view></router-view>
+    <component-pretty-scroll>
+      <router-view></router-view>
+    </component-pretty-scroll>
   </div>
 </template>
 
 <script>
 
-  export default {
+  import PrettyScroll from "components/pretty-scroll.vue";
 
+  export default {
+    components: {
+      "component-pretty-scroll": PrettyScroll,
+    }
   }
   
 </script>

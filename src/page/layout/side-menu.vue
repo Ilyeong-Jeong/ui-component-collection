@@ -4,7 +4,7 @@
     @apply bg-grey-dim2 w-80;
 
     .component-search-input {
-      @apply w-full px-6 pt-4 flex;
+      @apply w-full px-4 pt-4 flex;
     }
 
     .menu-name {

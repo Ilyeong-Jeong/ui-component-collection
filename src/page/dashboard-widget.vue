@@ -1,7 +1,7 @@
 <template>
   <page-panel
     title="Dashboard Widget"
-    desc="Resizable & Reordering Dashboard Widget Component Example, Adjust the order and size."
+    desc="Resizable & Reordering Dashboard Widget Component Example, Adjust the order and size. Width base 400px, Length base 200px."
   >
     <component-widget-frame
       :widgets="widgets"
