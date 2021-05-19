@@ -3,7 +3,8 @@
 
 ## Tech Stack
 Node v14 base
-- Vue v2
+- Vue v2.6
+- Vue Router v3
 - Webpack v5
 - Tailwind v2
 
